@@ -90,7 +90,7 @@ class BookStore:
             book = next((b for b in self.books if b.book_id == book_id), None)
             
             if not book:
-                console.print("[bold red]❌ Book not found![/bold red]")
+                console.print("[bold red]❌ No books found![/bold red]")
                 return
             
             if book.stock == 0:
